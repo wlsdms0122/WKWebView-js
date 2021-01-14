@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <script type="text/javascript">
             function webkit_test() {
                 webkit.messageHandlers.scriptHandler.postMessage({ "name": "jeong jin eun", "age": 26 });
             }
-         </script>
+            
+            function config() {
+                console.log("config!")
+            }
+
+            function set(message) {
+                console.log(message)
+                return "ok"
+            }
+        </script>
     </head>
     <body>
         <h1> <a href="javascript:webkit_test();">WebKit</a> </h1>
